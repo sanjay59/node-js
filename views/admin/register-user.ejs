@@ -1,0 +1,68 @@
+       <%- include('../admin/layout/topbar') %>
+
+
+      <%- include('../admin/layout/sidebar') %>
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+                <!-- Start Content-->
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                     <div class="col-12">
+                        <div class="page-title-box">
+                            <h4 class="page-title">Regoster Users</h4>
+                        </div>
+
+                    </div>
+
+                </div>     
+                <!-- end page title --> 
+
+
+                <div class="card-box">
+                    <div class="table-responsive">
+                        <% if(data.length){%>
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Sr No.</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Password</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% for(var i=0; i< data.length; i++) {%>
+                                <tr>
+                                    <th scope="row"><%= i+1 %></th>
+                                    <td><%= data[i].name %></td>
+                                    <td><%= data[i].email %></td>
+                                    <td><%= data[i].password %></td>
+                                </tr>
+                                <%}%>
+                            </tbody>
+                        </table>
+                        <%}%>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div> <!-- end container-fluid -->
+        </div> <!-- end content -->
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+<%- include('../admin/layout/footer') %>

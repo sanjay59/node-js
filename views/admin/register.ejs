@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap-stylesheet" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css"  id="app-stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+
+        <!-- Topbar Start -->
+        <div class="navbar-custom">
+            <ul class="list-unstyled topnav-menu float-right mb-0">
+
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="assets/images/avatar.jpg" alt="user-image" class="rounded-circle">
+                        <span class="d-none d-sm-inline-block ml-1 font-weight-medium">Alex M.</span>
+                        <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="mdi mdi-account-outline"></i>
+                            <span>Profile</span>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="mdi mdi-settings-outline"></i>
+                            <span>Settings</span>
+                        </a>
+
+                        <div class="dropdown-divider"></div>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="mdi mdi-logout-variant"></i>
+                            <span>Logout</span>
+                        </a>
+
+                    </div>
+                </li>
+
+            </ul>
+
+            <!-- LOGO -->
+            <div class="logo-box">
+                <a href="index.html" class="logo text-center logo-dark">
+                    <span class="logo-lg">
+                        <img src="assets/images/logo.png" alt="" height="22">
+                        <!-- <span class="logo-lg-text-dark">Uplon</span> -->
+                    </span>
+                    <span class="logo-sm">
+                        <!-- <span class="logo-lg-text-dark">U</span> -->
+                        <img src="assets/images/logo-sm.png" alt="" height="24">
+                    </span>
+                </a>
+
+                <a href="index.html" class="logo text-center logo-light">
+                    <span class="logo-lg">
+                        <img src="assets/images/logo-light.png" alt="" height="22">
+                        <!-- <span class="logo-lg-text-dark">Uplon</span> -->
+                    </span>
+                    <span class="logo-sm">
+                        <!-- <span class="logo-lg-text-dark">U</span> -->
+                        <img src="assets/images/logo-sm-light.png" alt="" height="24">
+                    </span>
+                </a>
+            </div>
+
+            <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+                <li>
+                    <button class="button-menu-mobile waves-effect waves-light">
+                        <i class="mdi mdi-menu"></i>
+                    </button>
+                </li>
+
+            </ul>
+        </div>
+        <!-- end Topbar -->
+
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="left-side-menu">
+
+            <div class="slimscroll-menu">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+
+                    <ul class="metismenu" id="side-menu">
+
+                        <li>
+                            <a href="index.html">
+                                <i class="mdi mdi-view-dashboard"></i>
+                                <span> Dashboard </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);">
+                                <i class="mdi mdi-google-pages"></i>
+                                <span> Pages </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li><a href="starter.html">Page</a></li>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Register</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- End Sidebar -->
+
+                <div class="clearfix"></div>
+
+            </div>
+            <!-- Sidebar -left -->
+
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+                <!-- Start Content-->
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box">
+                                <h4 class="page-title">Form page</h4>
+                            </div>
+
+                        </div>
+                    </div>     
+                    <!-- end page title --> 
+
+
+                    <div class="card-box">
+
+                        <h4 class="header-title mb-4">Input Types</h4>
+
+                        <form action="/register" method="post">
+                         <div class="form-group">
+                            <label for="exampleInputName1">Name</label>
+                            <input type="text" name="name" class="form-control" id="exampleInputName1"
+                            placeholder="Enter Name" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                            placeholder="Enter email" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" name="password" class="form-control"
+                            id="exampleInputPassword1" placeholder="Password" required="">
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                    </form>
+
+                </div>
+
+
+            </div> <!-- end container-fluid -->
+        </div> <!-- end content -->
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+</div>
+<!-- END wrapper -->
+
+<!-- Vendor js -->
+<script src="assets/js/vendor.min.js"></script>
+
+<!-- App js -->
+<script src="assets/js/app.min.js"></script>
+
+</body>
+
+</html>
